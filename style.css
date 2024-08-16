@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: sans-serif, Times, serif;
+    color: #1f1f1f;
+    /*padding: 14px;*/
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header nav {
+    height: 50px;
+    width: 100%;
+    background-color: transparent;
+    margin: 0;
+    overflow: hidden;
+}
+
+.nav-list {
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    padding-right: 1rem;
+    gap: 1rem;
+}
+
+.nav-item {
+    list-style: none;
+    cursor: pointer;
+    }
+
+.nav-item a {
+    color: #1f1f1f;
+    text-decoration: none;
+    font-size: 0.8rem;
+    
+}
+
+.nav-item p {
+    margin-bottom: 15px;
+}
+
+.nav-item p:hover {
+    text-decoration: underline;
+}
+
+.nav-item svg{
+    width: 33px;
+    height: 33px;
+    max-width: 100%;
+    border-radius: 100%;
+    border: 2px solid transparent;
+    background: transparent;
+    margin-top: 10px; 
+    color: #1f1f1f;  
+    padding: 3px; 
+}
+
+.nav-item svg:hover {
+    background-color: #e8e9eb;
+    border: 3px solid #e8e9eb;
+    padding: 3px;
+}
+
+.nav-item #google-apps{
+    width: 33px;
+    height: 33px;
+    max-width: 100%;
+    border-radius: 100%;
+    border: 2px solid transparent;
+    background: transparent;
+    margin-top: 10px; 
+    color: #1f1f1f;  
+    padding: 3px; 
+}
+
+.nav-item #google-apps:hover {
+    background-color: #e8e9eb;
+    border: 3px solid #e8e9eb;
+    padding: 3px;
+}
+
+.nav-item #profile-picture{
+    width: 35px !important;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    border: 3px solid transparent;
+    background: transparent;
+    margin-top: 10px; 
+    color: #1f1f1f;   
+}
+
+.nav-item #profile-picture:hover {
+    background-color: #e8e9eb;
+    border: 3px solid #e8e9eb;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 0 14px;
+}
+
+main img {
+    width: 380px;
+    
+}
+
+.searchBar {
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    gap: 14px;
+    border: 1px solid #d2d2d2;
+    padding: 14px;
+    border-radius: 24px;
+    color: #1f1f1f;
+
+}
+
+.searchBar:hover {
+    border-color: transparent;
+    background: #ffffff;
+    box-shadow: 0px 0px 10px 0px rgba(146, 145, 145, 0.5)
+    
+}
+
+.iconButtonContainer {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.iconButton {
+    background: transparent;
+    border: none;
+    color: #1f1f1f;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+input {
+    background: transparent;
+    outline: none;
+    border: unset;
+    color: #1f1f1f;
+    flex: 1;
+}
+
+.searchButtonsContainer {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.searchButtonsContainer button {
+    padding: 10px 14px;
+    border-radius: 4px;
+    background: #f2f2f2;
+    border: 1px solid transparent;
+    color: #1f1f1f;
+    font-size: 0.95em;
+    cursor: pointer;
+
+}
+
+.searchButtonsContainer button:hover {
+    border: 1px solid darkgray;
+}
+
+.languageSelection p{ 
+    font-size: 0.8em;
+    color: #1f1f1f;
+    cursor: pointer;
+
+}
+
+.languageSelection span a{
+    color: #1a0dab;
+    font-size: 0.9em !important;
+    padding: 0 3px;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.languageSelection span a:hover {
+    text-decoration: underline;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+}
+
+footer > section {
+    padding: 14px;
+    background-color: #f2f2f2;
+    font-size: 0.9em;
+    color: #1f1f1f;
+}
+
+footer>section:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #d2d2d2;
+    
+}
+
+.footerLink a {
+    font-size: 1em;
+    color: #1f1f1f;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0 14px 0 0;
+
+}
+
+.footerLink a:hover {
+    text-decoration: under;
+}
+
+@media (min-width:540px){
+    footer>section:last-child {
+        flex-direction: row;
+    }
+}
